@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["pi"]
 
 [dependencies]
+sensehat = { git = "https://github.com/thejpster/sensehat-rs.git" }
