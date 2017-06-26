@@ -1,7 +1,7 @@
 [package]
-name = "sensehat"
+name = "benita-sense-hat"
 version = "0.1.0"
-authors = ["pi"]
+authors = ["Joaquín R <globojorro@gmail.com>"]
 
 [dependencies]
 sensehat = { git = "https://github.com/thejpster/sensehat-rs.git" }
