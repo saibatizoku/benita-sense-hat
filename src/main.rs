@@ -1,10 +1,13 @@
+extern crate chrono;
 extern crate sensehat;
 
+use chrono::{DateTime, Utc};
 use sensehat::SenseHat;
 
 fn main() {
     let mut sense_hat = SenseHat::new().expect("Couldn't create Sense Hat object");
     loop {
+        let dt: DateTime<Utc> = Utc::now();
         let temp = sense_hat
             .get_temperature_from_humidity()
             .expect("Couldn't get temp");

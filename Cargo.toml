@@ -4,4 +4,8 @@ version = "0.1.0"
 authors = ["Joaquín R <globojorro@gmail.com>"]
 
 [dependencies]
+chrono = "0.4.0"
 sensehat = { git = "https://github.com/thejpster/sensehat-rs.git" }
+
+[profile.release]
+lto = true
